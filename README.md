@@ -1,6 +1,6 @@
 # Hevi Preview Plugin for Yazi
 
-![Hevi Preview in Yazi](img/2025-09-09-11-11-51.png)
+![Hevi Preview in Yazi](img/2025-09-09-11-57-08.png)
 
 This plugin enables previewing of `*.exe` and `*.bin` files in [yazi](https://github.com/sxyazi/yazi) using [hevi](https://github.com/Arnau478/hevi).
 
@@ -52,6 +52,15 @@ The plugin will call `hevi` to render a preview in the preview pane.
 
 - Ensure the `hevi` binary is installed and accessible from your shell.
 - Without `hevi`, this plugin will not work.
+
+## Comparison with hexyl.yazi
+
+Both **hevi.yazi** and [hexyl.yazi](https://github.com/Reledia/hexyl.yazi) provide hex previews, but with different goals:
+
+- **hevi.yazi** — focuses on executables and raw binaries, adds structured parsing for formats like PE/EXE (and ELF).
+- **hexyl.yazi** — generic fallback hex viewer, works on any file type but shows only raw bytes.
+
+Use **hevi.yazi** when you want meaningful structure for binaries; use **hexyl.yazi** for universal hex dumps.
 
 ## Contributing
 

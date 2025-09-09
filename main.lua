@@ -16,7 +16,7 @@ function M:peek(job)
 
 	-- Call the `hevi` command to preview binary content
 	-- Assume the `hevi` command takes the file path directly and outputs to stdout
-	local child = Command("hevi"):arg(filepath):stdout(Command.PIPED):stderr(Command.PIPED):spawn()
+	local child = Command("hevi"):arg("--color"):arg(filepath):stdout(Command.PIPED):stderr(Command.PIPED):spawn()
 	if not child then
 		ya.err("Failed to launch hevi: " .. filepath)
 		return
